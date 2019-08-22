@@ -34,7 +34,9 @@ platform :ios do
   lane :build do
     # generate_app_icon
     
-    get_provisioning_profiles(force: true)
+    sh('set')
+
+    get_provisioning_profile(force: true)
 
     build_app(
       configuration: 'Release',
