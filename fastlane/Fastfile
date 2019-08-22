@@ -32,9 +32,12 @@ platform :ios do
 
   desc "Description of what the lane does"
   lane :build do
-    generate_app_icon
+    # generate_app_icon
+    
+    get_provisioning_profiles(force: true)
 
     build_app(
+      configuration: 'Release',
       export_method: 'enterprise',
       export_options: { compileBitcode: false }
     )
