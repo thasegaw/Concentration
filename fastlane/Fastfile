@@ -22,6 +22,12 @@ platform :ios do
       appicon_image_file: "assets/AppIcon.png",
       appicon_path: "./Concentration/Assets.xcassets",
     )
+
+    appicon(
+      appicon_devices: [:ipad, :iphone, :ios_marketing],
+      appicon_image_file: "assets/AppIconDev.png",
+      appicon_path: "./Concentration/Preview Content/Preview Assets.xcassets",
+    )
   end
 
   desc "Description of what the lane does"
