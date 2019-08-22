@@ -33,5 +33,7 @@ platform :ios do
   desc "Description of what the lane does"
   lane :build do
     generate_app_icon
+
+    build_app
   end
 end
